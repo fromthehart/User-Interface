@@ -54,11 +54,11 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+    font-family: 'Monoton', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
@@ -70,32 +70,37 @@ html {
 	font-size: 62.5%;
 }
 
-body {
-	width: 920px;
-	padding: 15px 50px;
-	margin: 0 auto;
-	line-height: 1.1;
-	color: gray;
+.container {
+	color: gray;	
 	font-size: 1.5rem;
+	line-height: 1.25;
+	margin: 0 auto;
+	padding: 15px 50px;
+	width: 920px;
+	z-index: 0;
 }
 
 h1, h2 {
 	color: black;
 }
 
-.box {
-	margin: 25px 0;
-	vertical-align: top;
-}
-
 /* Menu bar */
 h1 {
-	font-size: 6.2rem;
+	font-size: 5.4rem;
 	text-align: center;
 }
 
+header {
+	background: #000723;
+	padding: 10px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
 .menu-box {
-	width: 875px;
+	margin: 0 auto;
+	width: 825px;
 }
 
 nav, .logo, .innovation, .box {
@@ -111,15 +116,21 @@ nav {
 nav a {
 	margin-left: 40px;
 	text-decoration: none;
-	color: lightgray;
+	color: grey;
 	font-size: 1.3rem;
-	padding: 3px 5px;
+	padding: 7px 8px;
 	border: 1px solid transparent;
+	background: url(../img/highlight.png) no-repeat -1px top rgba(0,0,0,0.2);
+	background-size: 0 100%;
+	-moz-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	transition: all 0.2s ease-out;
 }
 
 nav a:hover {
+	background-size: 100% 100%;
 	color: black;
-	border: 1px solid black;
 }
 
 nav a:first-child {
@@ -127,36 +138,56 @@ nav a:first-child {
 }
 
 .logo {
+	background: url(../img/logo.png) center / contain no-repeat;
+	height: 36px;
 	vertical-align: top;
+	width: 183px;
 }
 
 /* Hero */
 .hero-box {
 	margin: 50px 0;
+	vertical-align: top;
+}
+
+h2 {
+	font-size: 2.4rem;
+}
+
+.box {
+	margin: 25px 0;
 }
 
 .innovation {
 	width: 60%;
-	height: 200px;
-	margin-top: 40px;
+	height: 300px;
+	margin-top: 60px;
 	text-align: center;
+	vertical-align: top;
 }
 
 .hero-button {
-	padding: 7px 35px;
-	border: 1px solid gray;
 	background-color: white;
-	color: gray;
+	border: 1px solid gray;
+	color: black;
+	font-family: 'Monoton', cursive;
+	font-size: 2.4rem;
+	padding: 7px 35px;
 }
 
 .hero-button:hover {
-	border: 1px solid black;
+	border: 1px solid green;
+	color: darkblue;
 }
 
 .hero-img {
-	width: 39%;
+	background: url(../img/header-img.png);
+	background-position: 0 40px;
+	background-repeat: no-repeat;
+	background-size: 320px;
 	display: inline-block;
-	vertical-align: top;
+	height: 360px;
+	width: 320px;
 }
 
 /* Midsection */
