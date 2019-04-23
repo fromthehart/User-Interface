@@ -70,7 +70,7 @@ html {
 	font-size: 62.5%;
 }
 
-body {
+.container {
 	width: 920px;
 	padding: 15px 50px;
 	margin: 0 auto;
@@ -95,7 +95,8 @@ h1 {
 }
 
 .menu-box {
-	width: 875px;
+	// width: 875px;
+	width: 100%;
 }
 
 nav, .logo, .innovation, .box {
